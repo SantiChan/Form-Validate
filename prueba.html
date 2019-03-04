@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="prueba.css">
+    <!-- <script src="prueba.js"></script> -->
+</head>
+<body>
+    <div class="move-form">
+    <form action="show-data.html" method="GET" onSubmit="return validation();">
+        <div class="flex-form">
+            <label>Name</label>
+                <input id="name" type="text" name="name" placeholder="Name" tabindex="2" class="sizeInput"> <!--mirar placeholder -->
+            <div id="error" data-error="error"></div>
+            <label>Username</label>
+                <input id="username" type="text" name="username" placeholder="Username" class="sizeInput">
+            <div id="error2" data-error="error"></div>
+            <label>Email</label>
+                <input id="email" type="email" name="email" placeholder="Email" class="sizeInput">
+            <div id="error3" data-error="error"></div>
+            <label>Password</label>
+                <input id="password" type="password" name="password" placeholder="Password" class="sizeInput">
+            <div id="error4" data-error="error"></div>
+        </div>
+        <div>
+            <button type="submit" name="submit" value="send" class="button">Submit</button>
+        </div>
+    </form> 
+    </div> 
+<script src="prueba.js"></script>
+</body>
+</html>
