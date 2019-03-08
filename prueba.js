@@ -9,8 +9,12 @@ function validation(){
     var validator = true;
 
     if(name.trim().length <3){
-        document.querySelectorAll("[data-error]")[0].innerHTML = "Name is required";
+        document.querySelectorAll("[data-error]")[0].innerHTML = "Min. 3 characters";
         validator = false;
+    }
+
+    if(name.trim() == ''){
+        document.querySelectorAll("[data-error]")[0].innerHTML = "Name is requiered"
     }
     
     
