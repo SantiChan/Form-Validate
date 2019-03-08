@@ -14,7 +14,8 @@ function validation(){
     }
 
     if(name.trim() == ''){
-        document.querySelectorAll("[data-error]")[0].innerHTML = "Name is requiered"
+        document.querySelectorAll("[data-error]")[0].innerHTML = "Name is requiered";
+        validator = false;
     }
     
     
